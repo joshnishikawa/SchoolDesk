@@ -3,7 +3,7 @@
 a plug-and-play velocity-sensitive USB MIDI drum controller
 ***************************************************************
 
-NOTE: School Desk is a controller. It is not a sound synthesizer
+NOTE: School Desk is a controller. It is not a sequencer or synthesizer,
       nor is there a sound bank of any kind. It only sends MIDI messages
       to trigger sounds in a Digital Audio Workstation (DAW).
       You must have your DAW open and have School Desk assigned to control an
