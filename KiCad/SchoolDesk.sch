@@ -1,0 +1,335 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_Variable R1
+U 1 1 5DF68115
+P 5850 5200
+F 0 "R1" V 6115 5200 50  0000 C CNN
+F 1 "R_FSR" V 6024 5200 50  0000 C CNN
+F 2 "Connectors:PJ320E_3.5mm_Jack" V 5780 5200 50  0001 C CNN
+F 3 "~" H 5850 5200 50  0001 C CNN
+	1    5850 5200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5DF6D741
+P 5850 4800
+F 0 "R4" V 5643 4800 50  0000 C CNN
+F 1 "10k" V 5734 4800 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 5780 4800 50  0001 C CNN
+F 3 "~" H 5850 4800 50  0001 C CNN
+	1    5850 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5DF83A1B
+P 6000 5600
+F 0 "#PWR03" H 6000 5350 50  0001 C CNN
+F 1 "GND" V 6005 5472 50  0000 R CNN
+F 2 "" H 6000 5600 50  0001 C CNN
+F 3 "" H 6000 5600 50  0001 C CNN
+	1    6000 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Variable R3
+U 1 1 5DF7FADA
+P 5850 4400
+F 0 "R3" V 6115 4400 50  0000 C CNN
+F 1 "R_FSR" V 6024 4400 50  0000 C CNN
+F 2 "Connectors:PJ320E_3.5mm_Jack" V 5780 4400 50  0001 C CNN
+F 3 "~" H 5850 4400 50  0001 C CNN
+	1    5850 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5DF84868
+P 6000 4800
+F 0 "#PWR02" H 6000 4550 50  0001 C CNN
+F 1 "GND" V 6005 4672 50  0000 R CNN
+F 2 "" H 6000 4800 50  0001 C CNN
+F 3 "" H 6000 4800 50  0001 C CNN
+	1    6000 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5DF7FAE0
+P 5850 5600
+F 0 "R2" V 5643 5600 50  0000 C CNN
+F 1 "10k" V 5734 5600 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 5780 5600 50  0001 C CNN
+F 3 "~" H 5850 5600 50  0001 C CNN
+	1    5850 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 4400 5700 4800
+Wire Wire Line
+	5600 5000 5700 5000
+Wire Wire Line
+	6400 5200 6400 4400
+Wire Wire Line
+	6000 5200 6400 5200
+Wire Wire Line
+	6000 4400 6400 4400
+Connection ~ 6400 4400
+Wire Wire Line
+	6400 4400 6400 4100
+Wire Wire Line
+	5600 5000 5600 4500
+Wire Wire Line
+	5600 4500 5050 4500
+Wire Wire Line
+	5700 4400 5050 4400
+Wire Wire Line
+	5050 4100 6400 4100
+Wire Wire Line
+	5050 5100 5550 5100
+Wire Wire Line
+	5550 5100 5550 5750
+Wire Wire Line
+	5550 5750 6850 5750
+Wire Wire Line
+	6400 4400 6700 4400
+Wire Wire Line
+	6850 4550 6850 5450
+$Comp
+L power:GND #PWR01
+U 1 1 5DF8616A
+P 6700 4700
+F 0 "#PWR01" H 6700 4450 50  0001 C CNN
+F 1 "GND" V 6705 4572 50  0000 R CNN
+F 2 "" H 6700 4700 50  0001 C CNN
+F 3 "" H 6700 4700 50  0001 C CNN
+	1    6700 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5DF70DB6
+P 6700 4550
+F 0 "RV1" V 6493 4550 50  0000 C CNN
+F 1 "10k" V 6584 4550 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Alps_RK09K_Vertical" H 6700 4550 50  0001 C CNN
+F 3 "~" H 6700 4550 50  0001 C CNN
+	1    6700 4550
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5E1DB8A2
+P 6850 5600
+F 0 "R7" V 6643 5600 50  0000 C CNN
+F 1 "47k" V 6734 5600 50  0000 C CNN
+F 2 "R_SMD_3D:R_0805_2012Metric" V 6780 5600 50  0001 C CNN
+F 3 "~" H 6850 5600 50  0001 C CNN
+	1    6850 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C1
+U 1 1 5E1DBEAE
+P 6850 5900
+F 0 "C1" H 6965 5946 50  0000 L CNN
+F 1 "10uF" H 6965 5855 50  0000 L CNN
+F 2 "C_SMD_3D:C_0805_2012Metric" H 6850 5900 50  0001 C CNN
+F 3 "~" H 6850 5900 50  0001 C CNN
+	1    6850 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5E1DE05C
+P 6850 6050
+F 0 "#PWR0101" H 6850 5800 50  0001 C CNN
+F 1 "GND" H 6855 5877 50  0000 C CNN
+F 2 "" H 6850 6050 50  0001 C CNN
+F 3 "" H 6850 6050 50  0001 C CNN
+	1    6850 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x14_Female J4
+U 1 1 5E1DECCB
+P 4850 4500
+F 0 "J4" V 5000 4450 50  0000 L CNN
+F 1 "Conn_01x14_Female" V 4900 4100 50  0000 L CNN
+F 2 "S_2.54_3D:PinSocket_1x14_P2.54mm_Vertical" H 4850 4500 50  0001 C CNN
+F 3 "~" H 4850 4500 50  0001 C CNN
+	1    4850 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x14_Female J5
+U 1 1 5E1E04A5
+P 4400 4500
+F 0 "J5" V 4550 4500 50  0000 C CNN
+F 1 "Conn_01x14_Female" V 4450 4500 50  0000 C CNN
+F 2 "S_2.54_3D:PinSocket_1x14_P2.54mm_Vertical" H 4400 4500 50  0001 C CNN
+F 3 "~" H 4400 4500 50  0001 C CNN
+	1    4400 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Female J1
+U 1 1 5E1E4FCE
+P 5450 4800
+F 0 "J1" V 5500 4550 50  0000 L CNN
+F 1 "Conn_1x5" V 5500 4700 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.00mm" H 5450 4800 50  0001 C CNN
+F 3 "~" H 5450 4800 50  0001 C CNN
+	1    5450 4800
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5E1E6ACD
+P 4200 3900
+F 0 "#PWR0102" H 4200 3650 50  0001 C CNN
+F 1 "GND" V 4205 3772 50  0000 R CNN
+F 2 "" H 4200 3900 50  0001 C CNN
+F 3 "" H 4200 3900 50  0001 C CNN
+	1    4200 3900
+	0    1    1    0   
+$EndComp
+NoConn ~ 5050 3900
+NoConn ~ 5050 4000
+Wire Wire Line
+	4200 4100 3400 4100
+NoConn ~ 4200 4200
+$Comp
+L Connector:Conn_01x01_Female J3
+U 1 1 5E2156C6
+P 3900 4000
+F 0 "J3" H 3950 4000 50  0000 C CNN
+F 1 "Conn_1x1" H 4000 4050 50  0000 C CNN
+F 2 "P_2.54_3D:PinHeader_1x01_P2.54mm_Vertical" H 3900 4000 50  0001 C CNN
+F 3 "~" H 3900 4000 50  0001 C CNN
+	1    3900 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4100 4000 4200 4000
+Wire Wire Line
+	5050 4600 5250 4600
+Wire Wire Line
+	5250 4700 5050 4700
+Wire Wire Line
+	5050 4800 5250 4800
+Wire Wire Line
+	5250 4900 5050 4900
+Wire Wire Line
+	5050 5000 5250 5000
+NoConn ~ 5050 5200
+NoConn ~ 4200 5200
+NoConn ~ 4200 5100
+NoConn ~ 4200 5000
+NoConn ~ 4200 4900
+NoConn ~ 4200 4700
+NoConn ~ 4200 4600
+NoConn ~ 4200 4500
+$Comp
+L Device:R R5
+U 1 1 5E233723
+P 3050 4800
+F 0 "R5" V 2843 4800 50  0000 C CNN
+F 1 "220" V 2934 4800 50  0000 C CNN
+F 2 "R_SMD_3D:R_0805_2012Metric" V 2980 4800 50  0001 C CNN
+F 3 "~" H 3050 4800 50  0001 C CNN
+	1    3050 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5E23401B
+P 3950 4800
+F 0 "R6" V 3743 4800 50  0000 C CNN
+F 1 "220" V 3834 4800 50  0000 C CNN
+F 2 "R_SMD_3D:R_0805_2012Metric" V 3880 4800 50  0001 C CNN
+F 3 "~" H 3950 4800 50  0001 C CNN
+	1    3950 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:DIN-5_180degree J2
+U 1 1 5E236D4B
+P 3500 4900
+F 0 "J2" H 3500 4625 50  0000 C CNN
+F 1 "DIN-5_180degree" H 3500 4534 50  0000 C CNN
+F 2 "Connect:SDS-50J" H 3500 4900 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 3500 4900 50  0001 C CNN
+	1    3500 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4100 6400 3550
+Wire Wire Line
+	6400 3550 2900 3550
+Wire Wire Line
+	2900 3550 2900 4800
+Connection ~ 6400 4100
+NoConn ~ 3500 4600
+NoConn ~ 3800 4900
+NoConn ~ 3200 4900
+Wire Wire Line
+	4100 4800 4200 4800
+Connection ~ 6850 5750
+$Comp
+L Connector:Conn_01x05_Female J6
+U 1 1 5E1E56CC
+P 3200 3900
+F 0 "J6" V 3250 3650 50  0000 L CNN
+F 1 "Conn_1x5" V 3250 3800 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.00mm" H 3200 3900 50  0001 C CNN
+F 3 "~" H 3200 3900 50  0001 C CNN
+	1    3200 3900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4300 3500 4300
+Wire Wire Line
+	3500 4300 3500 4000
+Wire Wire Line
+	3500 4000 3400 4000
+Wire Wire Line
+	4200 4400 3600 4400
+Wire Wire Line
+	3600 4400 3600 3900
+Wire Wire Line
+	3600 3900 3400 3900
+Wire Wire Line
+	5050 4200 5150 4200
+Wire Wire Line
+	5150 4200 5150 3800
+Wire Wire Line
+	5150 3800 3400 3800
+Wire Wire Line
+	5050 4300 5250 4300
+Wire Wire Line
+	5250 4300 5250 3700
+Wire Wire Line
+	5250 3700 3400 3700
+Connection ~ 5700 4400
+Wire Wire Line
+	5700 5000 5700 5200
+Connection ~ 5700 5200
+Wire Wire Line
+	5700 5200 5700 5600
+$EndSCHEMATC
