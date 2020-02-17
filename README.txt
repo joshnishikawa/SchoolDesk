@@ -10,7 +10,7 @@ NOTE: School Desk is a controller. It is not a sequencer or synthesizer,
       instrument with its own soundbank or synthesis in the DAW.
      
 Plug your School Desk into a USB port and it will be automatically recognized
-as a MIDI controller and should appear as "School Desk" in your DAW.
+as a MIDI controller and should appear as "SchoolDesk" in your DAW.
 
 School Desk has two banks which store 11 sounds each.
 
@@ -36,29 +36,31 @@ These are the default sounds for Bank 2:
 | Note #66   | Note #61   | Note #64    | Note #81   | Note #75   |
 '------------^------------^-------------^------------^------------'
 
-You can switch between banks 1 and 2 by pressing and releasing
+You can switch between banks 1 and 2 by quickly pressing and releasing
 The "Edit" button.
 
 --------------------------------------------------------------------------------
 
 Different sounds can also be assigned to each pad by following these steps:
 
-1. Press and HOLD the Edit knob on the right side of the controller.
-    The orange LED will light up.
+1. Press and HOLD the Edit knob on top of the controller for one second.
+    (The red LED blinks when the knob is pressed and stays lit after one second)
+    
+2. Release the knob. The controller is now in "Program Mode" where pads can be
+    assigned different sounds or be set as expression controllers.
 
-2. While holding down this knob, tap the pad you want to edit.
-    The orange LED will now begin to blink and you can release the Edit knob.
+3. While in program mode - indicated by the red LED - trigger the pad you want
+    to change. The assigned sound will play (or no sound if set as expression
+    controller).
 
-3. Now the controller is in "Program Mode" and the sound for the pad you
-    tapped can be changed by turning the knob. Continue to trigger the pad until
-    you find the desired sound.*
-
-4. While in program mode (indicated by the blinking LED) you may change
-    the sounds for any of the pads by first triggering the pad and then
-    turning the knob until you reach the desired sound.
-
-5. When you have finished choosing your sounds. Press and releasethe Edit knob.
-    The sounds you selected will be saved to internal memory and will be
+4. Turn the knob until you reach the desired sound.* Turning the knob will
+    reassign an expression controller as a drum sound. To assign the pad as an
+    expression controller, briefly press and release the knob the same way you
+    would to change between banks A and B.
+    
+5. When you have finished choosing your sounds. Press and hold the Edit knob
+    for one second again. The LED will return to green or blue (depending on the
+    bank).  The sounds you selected will be saved to internal memory and will be
     available the next time you plug in School Desk (unltil you change them).
     
     *NOTE: Turning the knob will cycle though note numbers 35 through 81.
@@ -149,23 +151,3 @@ These are the Control Change numbers used for Bank 2:
 NOTE: All of these Control Change numbers are otherwise 'undefined' in the
       general MIDI specification and should therefore be safe to use.
       However, please be aware that these numbers cannot be changed.
-      
-A pad can be set as an expression controller by following these steps:
-
-1. While in Program Mode, press and HOLD the Edit button on the right side 
-    of the controller. (The orange LED will continue to blink.)
-
-2. While holding this button, tap the pad(s) you want to make an expression
-    controller. The pad(s) will no longer trigger sounds and turning the knob
-    will have no effect.*
-
-3. When you release the Edit button, the controller will remain in
-    "Program Mode" and you will still be able to edit the sounds for other
-    pads until the Edit button is pressed and released.
-    
-4. When you have finished choosing your sounds. Press the Edit button once
-    again. The sounds you selected will be saved to internal memory and will be
-    available the next time you plug in School Desk (unltil you change them).
-
-*NOTE: Follow the same procedure when you want the pad to trigger sounds again.
-        The most recently used sound will be restored.
