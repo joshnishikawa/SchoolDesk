@@ -51,15 +51,15 @@ int Editor::quadOne(byte val, byte min, byte max){
     }
     else if (val == max){
       encoder->write(0);
-      newValue = 0;
+      newValue = min;
     }
   }
   else if (newValue == -4){
-    if (val > 0){
+    if (val > min){
       encoder->write(0);
       newValue = val - 1;
     }
-    else if (val == 0){
+    else if (val == min){
       encoder->write(0);
       newValue = max;
     }

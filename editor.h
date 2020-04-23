@@ -12,6 +12,7 @@ class Editor{
     ~Editor();
     Bounce* bounce;
     Encoder* encoder;
+    int number;
     int level;
     int sound;
     byte editing;

@@ -49,6 +49,10 @@ void pulsar(){
 
 
 void setup(){
+  Serial.begin(9600);
+  delay(1000);
+  Serial.println("firstofall");
+  
 //  EEPROM.put(127, 255); // WARNING! RESTORES DEFAULT SETTINGS!
   byte resetDefaults = EEPROM.read(127);
 
@@ -59,6 +63,7 @@ void setup(){
     else{useExp[i] = EEPROM.read(i);    // or load user-saved settings
     }
   }
+  Serial.println("andthen");
 
   Drum[0]  = new MIDIdrum(19, resetDefaults ? EEPROM.put(0, 49) : EEPROM.read(0), TOUCH);
   Drum[1]  = new MIDIdrum(18, resetDefaults ? EEPROM.put(1, 50) : EEPROM.read(1), TOUCH);
@@ -83,12 +88,14 @@ void setup(){
   Drum[19] = new MIDIdrum(15, resetDefaults ? EEPROM.put(19, 64) : EEPROM.read(19), TOUCH);
   Drum[20] = new MIDIdrum(22, resetDefaults ? EEPROM.put(20, 81) : EEPROM.read(20), TOUCH);
   Drum[21] = new MIDIdrum( 4, resetDefaults ? EEPROM.put(21, 75) : EEPROM.read(21), TOUCH);
+  Serial.println("thenwhat");
 
   EEPROM.put(127, 0); // Allow user settings to be saved
 
-  Exp[0]  = new MIDItouch(19, 20);
+/*  Exp[0]  = new MIDItouch(19, 20);
   Exp[1]  = new MIDItouch(18, 21);
   Exp[2]  = new MIDItouch(23, 22);
+  Serial.println("boutta");
   Exp[3]  = new MIDItouch( 0, 23);
   Exp[4]  = new MIDItouch( 3, 24);
   Exp[5]  = new MIDItouch( 1, 25);
@@ -109,11 +116,12 @@ void setup(){
   Exp[19] = new MIDItouch(15, 110);
   Exp[20] = new MIDItouch(22, 111);
   Exp[21] = new MIDItouch( 4, 112);
-
+*/
   for(int i=0;i<22;i++){ // calibrate all drums and exp controllers
     Drum[i]->setThreshold();
-    Exp[i]->inputRange();
+//    Exp[i]->inputRange();
   }
+  Serial.println("dunnit");
 
   pinMode(greenLED, OUTPUT);
   pinMode(redLED, OUTPUT);

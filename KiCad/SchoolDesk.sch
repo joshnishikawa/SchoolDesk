@@ -329,32 +329,6 @@ F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 3700 3150 50  0001
 	1    3700 3150
 	1    0    0    -1  
 $EndComp
-Text GLabel 2800 2350 2    50   Input ~ 0
-3.3v
-$Comp
-L Device:R R8
-U 1 1 5E25E479
-P 3150 2450
-F 0 "R8" V 2943 2450 50  0000 C CNN
-F 1 "10k" V 3034 2450 50  0000 C CNN
-F 2 "R_SMD_3D:R_0805_2012Metric" V 3080 2450 50  0001 C CNN
-F 3 "~" H 3150 2450 50  0001 C CNN
-	1    3150 2450
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:R R9
-U 1 1 5E2620CF
-P 2050 2450
-F 0 "R9" V 1843 2450 50  0000 C CNN
-F 1 "10k" V 1934 2450 50  0000 C CNN
-F 2 "R_SMD_3D:R_0805_2012Metric" V 1980 2450 50  0001 C CNN
-F 3 "~" H 2050 2450 50  0001 C CNN
-	1    2050 2450
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	3000 2450 2800 2450
 $Comp
 L Device:Rotary_Encoder_Switch SW1
 U 1 1 5E258607
@@ -377,17 +351,6 @@ F 3 "" H 2050 2250 50  0001 C CNN
 	1    2050 2250
 	0    1    -1   0   
 $EndComp
-$Comp
-L Device:R R10
-U 1 1 5E263249
-P 3150 2150
-F 0 "R10" V 2943 2150 50  0000 C CNN
-F 1 "10k" V 3034 2150 50  0000 C CNN
-F 2 "R_SMD_3D:R_0805_2012Metric" V 3080 2150 50  0001 C CNN
-F 3 "~" H 3150 2150 50  0001 C CNN
-	1    3150 2150
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
 	2200 2250 2050 2250
 Wire Wire Line
@@ -405,10 +368,6 @@ Wire Wire Line
 Wire Wire Line
 	4050 2050 4700 2050
 Wire Wire Line
-	4700 2450 3300 2450
-Wire Wire Line
-	4700 2150 3300 2150
-Wire Wire Line
 	3500 1700 3500 2350
 Wire Wire Line
 	6900 2050 6900 1250
@@ -418,14 +377,6 @@ Wire Wire Line
 	1650 1250 1650 3050
 Wire Wire Line
 	1650 3050 3100 3050
-Wire Wire Line
-	3000 2150 3000 2250
-Wire Wire Line
-	3000 2250 2800 2250
-Wire Wire Line
-	4700 2650 1900 2650
-Wire Wire Line
-	1900 2650 1900 2450
 Wire Wire Line
 	4600 3700 4700 3700
 Wire Wire Line
@@ -444,19 +395,11 @@ U 1 1 5E2C4C0A
 P 5200 3900
 F 0 "D1" H 5200 3433 50  0000 C CNN
 F 1 "LED_RCBG" H 5200 3524 50  0000 C CNN
-F 2 "LED_THT_3D:LED_D5.0mm-4_RGB" H 5200 3850 50  0001 C CNN
+F 2 "LED_SMD_3D:LED_RGB_1210" H 5200 3850 50  0001 C CNN
 F 3 "~" H 5200 3850 50  0001 C CNN
 	1    5200 3900
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4600 3700 4600 2850
-Wire Wire Line
-	4600 2850 4700 2850
-Wire Wire Line
-	4500 3900 4500 2950
-Wire Wire Line
-	4500 2950 4700 2950
 $Comp
 L Device:R R11
 U 1 1 5E30BD14
@@ -513,4 +456,35 @@ Wire Wire Line
 Wire Wire Line
 	7150 4750 6900 4750
 Connection ~ 7150 3550
+Wire Wire Line
+	2800 2450 4700 2450
+Wire Wire Line
+	4700 2150 3000 2150
+Wire Wire Line
+	3000 2150 3000 2250
+Wire Wire Line
+	3000 2250 2800 2250
+Wire Wire Line
+	4700 2650 2200 2650
+Wire Wire Line
+	2200 2650 2200 2450
+$Comp
+L power:GND #PWR0107
+U 1 1 5E547569
+P 2800 2350
+F 0 "#PWR0107" H 2800 2100 50  0001 C CNN
+F 1 "GND" V 2805 2222 50  0000 R CNN
+F 2 "" H 2800 2350 50  0001 C CNN
+F 3 "" H 2800 2350 50  0001 C CNN
+	1    2800 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 2850 4500 2850
+Wire Wire Line
+	4500 2850 4500 3900
+Wire Wire Line
+	4600 3700 4600 2950
+Wire Wire Line
+	4600 2950 4700 2950
 $EndSCHEMATC
